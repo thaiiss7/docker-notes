@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "PQHQuq7X2kdQqrWEAEH5wGyZKO6+MvV8e11lYNjDsSM=",
+  "Source": "docker-notes",
+  "BasePath": "_content/docker-notes",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
