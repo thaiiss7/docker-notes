@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("docker-notes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11cce08cf989fc56d539743aac2fb3e9cc9f3059")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53c64f4298eedebf3b3b2ca55d4e614bc9508528")]
 [assembly: System.Reflection.AssemblyProductAttribute("docker-notes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("docker-notes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
