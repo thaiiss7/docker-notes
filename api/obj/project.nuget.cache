@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gEGbXoKKfaI=",
+  "dgSpecHash": "0gAsibldHrA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\disrct\\Desktop\\docker-notes\\docker-notes.csproj",
+  "projectFilePath": "C:\\Users\\disrct\\Desktop\\docker-notes\\api\\docker-notes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\disrct\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.16\\microsoft.aspnetcore.openapi.9.0.16.nupkg.sha512",
     "C:\\Users\\disrct\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"

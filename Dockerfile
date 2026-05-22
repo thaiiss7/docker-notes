@@ -1,11 +1,18 @@
-FROM mcr.microsoft.com/mssql/server:2022-latest
+FROM mcr.microsoft.com/dotnet/sdk:9.0
+WORKDIR /berk
+# ENV ACCEPT_EULA=Y
+# ENV MSSQL_PID=Developer
 
-ENV ACCEPT_EULA=Y
-ENV MSSQL_PID=Developer
+# ENV MSSQL_SA_PASSWORD=821hs91ukd_uwq&1*9j
 
-ENV MSSQL_SA_PASSWORD=821hs91ukd_uwq&1*9j
+ENV HTTP_PROXY="host.docker.internal:3128"
+ENV HTTPS_PROXY="host.docker.internal:3128"
 
-EXPOSE 1433
+COPY ./api/docker-notes.csproj .
+RUN dotnet restore
+COPY ./api/ .
 
-ENTRYPOINT ["echo", "Are", "you", "ready"]
-CMD ["kids?"]
+ENTRYPOINT ["dotnet", "run"]
+# CMD ["kids?"]
+
+EXPOSE 5182
