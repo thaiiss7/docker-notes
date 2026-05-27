@@ -1,5 +1,5 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0
-WORKDIR /berk
+WORKDIR /panetone
 # ENV ACCEPT_EULA=Y
 # ENV MSSQL_PID=Developer
 
@@ -8,11 +8,11 @@ WORKDIR /berk
 ENV HTTP_PROXY="host.docker.internal:3128"
 ENV HTTPS_PROXY="host.docker.internal:3128"
 
-COPY ./api/docker-notes.csproj .
+COPY ./Panetone/*.csproj .
 RUN dotnet restore
-COPY ./api/ .
+COPY ./Panetone/ .
 
-ENTRYPOINT ["dotnet", "run"]
+ENTRYPOINT ["dotnet", "run", "--urls=http://0.0.0.0:5184"]
 # CMD ["kids?"]
 
-EXPOSE 5182
+EXPOSE 5184

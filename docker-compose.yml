@@ -1,0 +1,12 @@
+services:
+    api:
+        build: .
+            # dockerfile: Dockerfile
+            # context: ./
+        ports:
+         - 1919:5184
+#         volumes:
+#          - bancodedados:/app
+
+# volumes:
+#     bancodedados
