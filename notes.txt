@@ -8,7 +8,7 @@ docker compose up -d --build
 
 docker compose ps -> visualizar containers
 
-docker compose dowm -> derruba todo o compose permanentemente, encerrando todos os containers
+docker compose down -> derruba todo o compose permanentemente, encerrando todos os containers
 se passar -v até os volumes são encerrados
 
 docker compose logs

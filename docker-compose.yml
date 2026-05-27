@@ -5,8 +5,21 @@ services:
             # context: ./
         ports:
          - 1919:5184
+        environment:
+            - DB_HOST=db 
+            - DB_PORT=1433
+            - DB_DB=Panetone
+            - DB_USER=sa
+            - DB_PASS=821hs91ukd_uwq&1*9j
 #         volumes:
 #          - bancodedados:/app
+    db:
+        image: mcr.microsoft.com/mssql/server:2022-latest
+        
+        environment:
+            - ACCEPT_EULA=Y
+            - MSSQL_PID=Developer
+            - MSSQL_SA_PASSWORD=821hs91ukd_uwq&1*9j
 
 # volumes:
 #     bancodedados

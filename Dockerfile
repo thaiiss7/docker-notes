@@ -1,5 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0
+
 WORKDIR /panetone
+
 # ENV ACCEPT_EULA=Y
 # ENV MSSQL_PID=Developer
 
