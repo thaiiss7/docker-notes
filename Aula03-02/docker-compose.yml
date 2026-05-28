@@ -1,0 +1,17 @@
+services:
+  maestro:
+    image: nginx:latest
+    ports:
+    - 1010:80
+
+    volumes:
+    - ./nginx.conf:/etc/nginx/nginx.conf:ro
+  worker00:
+    image: hashicorp/http-echo
+    command: "-text='mensage ai'"
+  worker01:
+    image: hashicorp/http-echo
+    command: "-text='outro'"
+  worker02:
+    image: hashicorp/http-echo
+    command: "-text='simsim'"
