@@ -4,11 +4,12 @@ WORKDIR /atividade2
 
 ENV HTTP_PROXY="host.docker.internal:3128"
 ENV HTTPS_PROXY="host.docker.internal:3128"
+ENV NO_PROXY="maestro,localhost,127.0.0.1"
 
 COPY ./Client/*.csproj .
 RUN dotnet restore
 COPY ./Client/ .
 
-ENTRYPOINT ["dotnet", "run", "--urls=http://0.0.0.0:1010"]
+ENTRYPOINT ["dotnet", "run"]
 
 EXPOSE 1010

@@ -10,7 +10,7 @@ public class Program
     
         while(true)
         {
-            using HttpResponseMessage response = await client.GetAsync("http://localhost:1010/api");
+            using HttpResponseMessage response = await client.GetAsync("http://maestro:80/api");
 
             string content = await response.Content.ReadAsStringAsync();
 
