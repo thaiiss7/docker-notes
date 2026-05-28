@@ -21,5 +21,24 @@ services:
         volumes:
             - bancodedados:/var/opt/mssql
 
+    maestro:
+        image: nginx:latest
+        ports:
+        - 80:5184
+
+        volumes:
+            - /Aula03/nginx.conf:/etc/nginx/nginx.conf:ro
+
+    worker00:
+        image: hashicorp/http-echo
+        command: "-text='mensage ai'"
+
+    worker01:
+        image: hashicorp/http-echo
+        command: "-text='outro'"
+    worker02:
+        image: hashicorp/http-echo
+        command: "-text='simsim'"
+
 volumes:
     bancodedados:
