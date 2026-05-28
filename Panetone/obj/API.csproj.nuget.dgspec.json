@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cca1ct\\Repositories\\Docker\\Classes\\02-Aula\\01-Compose\\API\\API.csproj": {}
+    "C:\\Users\\disrct\\Desktop\\docker-notes\\Panetone\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cca1ct\\Repositories\\Docker\\Classes\\02-Aula\\01-Compose\\API\\API.csproj": {
+    "C:\\Users\\disrct\\Desktop\\docker-notes\\Panetone\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cca1ct\\Repositories\\Docker\\Classes\\02-Aula\\01-Compose\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\disrct\\Desktop\\docker-notes\\Panetone\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\cca1ct\\Repositories\\Docker\\Classes\\02-Aula\\01-Compose\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\cca1ct\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cca1ct\\Repositories\\Docker\\Classes\\02-Aula\\01-Compose\\API\\obj\\",
+        "projectPath": "C:\\Users\\disrct\\Desktop\\docker-notes\\Panetone\\API.csproj",
+        "packagesPath": "C:\\Users\\disrct\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\disrct\\Desktop\\docker-notes\\Panetone\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\cca1ct\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\disrct\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -83,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.117/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
