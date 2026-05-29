@@ -1,0 +1,25 @@
+services:
+  api:
+    build: 
+      dockerfile: Backend
+      context: .
+
+    ports: 
+      - 1819:5284
+    env_file:
+      - .env
+  
+  db:
+    image: mysql:latest
+    
+    environment:
+      - MYSQL_ROOT_PASSWORD="root"
+      - MYSQL_DATABASE="Iduca"
+      - MYSQL_USER="becaaaaaa"
+      - MYSQL_PASSWORD="12345678"
+
+    volumes:
+      - Iduca:/var/lib/mysql
+  
+volumes:
+  Iduca:
